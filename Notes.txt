@@ -1,0 +1,212 @@
+------------------------------------ qing ------------------------------
+
+preservelog check
+request Accept Cookies User-Agent
+
+get only header no body
+post both header and body (e.g. submitting a table) (body can be empty)
+
+pyquery
+xpath
+beautifulsoup
+
+doc = pyquery(.text)
+doc("xx xx")
+doc("span#x") id search
+doc("div.xxx") class search
+
+site:open.163.com
+
+
+[\s=-!] wrong
+[\s=!-] right
+
+the problem of multiple inheritation
+class 多态 only inheritation?
+
+@Property compared with self-defined AOP Decorators
+ch06 code reading
+ch07 whole db
+cursor.description
+time.sleep(int)
+Mapping[str, callable]
+Optional[List] to avoid NoneType in PyCharm
+
+directly 1 2 better than a class (访问静态成员的语法是 类名.成员名，访问实例成员的语法是 实例名.成员名）
+ch09 practice python interface chageg the '600120' to '60012'
+ch09 regular expression how to come up with
+is None 
+not 
+ch09 SinaQuotationHelper regular expression
+get_api method
+debug (logging) the connectionpool How come?
+
+-------------------------------- AI: Machine Learning in Health Care -------------------------------
+
+*************************************
+U.K. U.S. China Indian Japan Africa Australia Russia France Brazil Holand Turkey 
+
+
+niyai
+verify the older percentage will be positively related to the spread speed 
+verify the stringency will be negatively related to the spreard speed 
+classfication different continent
+
+step 
+tanh
+Relu(Rectified linear) to be non-linear
+sigmoid
+Linear
+differentiable fpr 
+
+f(t)
+total_cases_per_million
+new_cases_per_million
+stringency_index
+reproduction_rate
+
+constants
+population
+population_density
+median_age
+aged_65_older
+aged_70_older
+gdp_per_capita
+extreme_poverty
+human_development_index
+cardiovasc_death_rate	
+diabetes_prevalence	
+female_smokers	
+male_smokers
+hospital_beds_per_thousand	
+life_expectancy
+
+? Y total/new?
+? x confirmation ?
+?concrete data processing?
+
+
+per million 
+
+
+
+
+
+
+Parameter Test
+
+20-16-8-4 NN
+20-18-14-7-4 NN
+LR-《0.1; 100 iterations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------- AI: Natural Language Processing --------------------------------------------------
+ 
+1st NLP Research Subject Session
+(summary list in the chat --- websites)
+The first thing for me when seeing a new track is to type it into Google or Google scholar to see what it comes out. e.g. text summarization transformer ( the last is the key words!)
+Transformer: mostly used network nowadays
+Two variants of transformaer: bert(encoder)  & gpt(decoder)   transformaers  
+BART https://arxiv.org/pdf/1910.13461.pdf Instead of pretraining the separate model, do both
+pegusas summarization
+pretrain(calculate the loss or error), fine tuning
+transformer includes two parts ( encoder & decoder ) (transformer architecture) vector processing
+sentimental analysis encoder only(add a classifier)
+conditional generation   decoder only (in recursive fashion or auto regression) -> probability  distribution
+The computer cannot output word but numbers ( a probability distribution over the full vocabulary ) a tree grows exponentially -> beam search 
+Loss computation  (a probability distribution vs Dirac function)  cross entropy (although not a metric exactly violating symmetricity) The dirac will never be taken into log for minus infinity or zero, but outside there will be just one term left, similar to maximum likelihood estimator or cross entropy related to information theory
+mimnimize the minus log of the probability of the real word in the result of the model(gradient descent method in an iteration fashion learning process)
+text summarization, machine translation (encoder & decoder) both needed calculating loss -> cross entropy
+masked language model (randomly hidden) versus casual language model ( left to right )
+style transformation
+segment embedding(distinguish sentences from each other) & positional embedding(distinguish the order of each word) explicitly add different segment embedding.
+For pbl's, we just make small modifications on the model to save resources needed. Fine-tuning the moodel for improvement for a specific domain of text summarization. 
+*How to read a paper: 1. Abstract (skip introduction, etc)  Contributions(including models) at the end 2.Model full details 3. Analysis & Experim
+TRANSFORMER ARCHITECTURE
+*attention mechanism* is a way to change the architecture of the neural network 
+SOFTMAX take exponential(resolve the negative) on each term then normalize(probability[0, 1]) by the sum -> used to parameterize the probability distribution(sum to 1)
+inner product introduced -> scale the values according to their weights different attention heads
+feedforward network   query, key and values
+Batch Normalization
+(input) (decoding) dialog -> words / image -> pixel
+Whatever the layer of the network, it is still linear because the multiplication between matrices is a linear manupulation. So add non-linear layer into that! The more added, the more complex it becomes. 
+Known as *activation function*
+e.g. SIGMOID sigmoid $\frac{1}{1+\exp{-x}}$ ||  ReLu max(x, 0)  Rectified Linear Unit
+too many  parameters cause overfitting(learn by heart input data)
+SARCASM say something meaning the opposite  
+2 sentences (similar contradict underdetermined ) relationships additional information like user-realted(caused by personality)
+style transfer(non-sarcastic -> sarcastic) sentimental analysis (sarcastic or not) conditional text generalization (in a sarcastic way) gpt Topic added to help better prediction
+1. Make a contribution as an application
+2. More contribution into real research
+detect style transformation generation sarcasm improved sentimental analysis
+generating sarcasm -> conditional text generation / style transfer
+
+*****************************************************
+torchmoji
+download_weights.py 
+1. 去注释
+2. urllib。requests
+3. import urllib.request
+
+
+---------------------------------------- DA: Enhanced Eduaction with Human Data ------------------------------------------------
+
+1st HD Research Subject Session
+Journal Science & Nature Frontiers
+lasso model  logistic regression
+manuscript 
+Introduction Methods Analytical Approach Results Discussion   Referencess
+revision and resubmit R&R
+01:08 - good content!
+
+***********************************************************
+objective maternal education & per capita income 
+demographic motivation challenge preference
+the way we assess things
+social emotional 
+dispositional mindfulness
+**************Proposal*********
+1. Background on this research area and your motivation for studying if 2. Existing methods to solve the problem you're investigating, 3. Your proposed method to solve the problem, 4. A plan to validate solution, 5. Details on your team and rough idea how you'll share responsibilities, 6. Proposed or current data sources, 7. Back up plans if the solution doesn't work.********
+
+ ladder  community place of family ascending 1-10  
+social emotional 
+children that may not understand the sentences
+self-report data and behavioral/performance data
+
+Don't combine a whole class. Search them separately! 
+
+Self-regulation （cognitive behavior emotion )
+
+details about the data cleaning
+
+How to normalize the XPR & XFA
+
+
+
+------------------- Recommendation System ------------------
+
+Restricted Bolzman Machine
+generate profile 
+content based learning no much info about user vs fail for new users(lack of personality)
+neighborhood-based recommendation (itme)
+spearman pearson jaccard
+teacher student knowledge disllilation
+
+
+
+
+
+
