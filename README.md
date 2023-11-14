@@ -1,2 +1,1 @@
-# Welcome to Bill's Code Reprository
-### This is a test!
+# Welcome to Bill's publication section!
